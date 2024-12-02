@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>E-Commerce Website</title>
+    <script type="module" crossorigin src="assets/showToast-B1ooQwmv.js"></script>
+    <script type="module" crossorigin src="assets/main-caIKMIfs.js"></script>
+    <link rel="stylesheet" crossorigin href="assets/showToast-Cz9uMsA8.css">
+  </head>
+  <body>
+    <header class="section-navbar">
+      <section class="top_txt">
+        <div class="head container">
+          <div class="head_txt">
+            <p>Free Shiping, 30-day return and refund guarntee.</p>
+          </div>
+          <div class="sing_in_up">
+            <a href="#">Sign In</a>
+            <a href="#">Sign Up</a>
+          </div>
+        </div>
+      </section>
+      <div class="container">
+        <div class="navbar-brand">
+          <a href="index.html">
+            <span class="logo_1">TDM</span> <span class="logo_2">Store</span>
+          </a>
+        </div>
+        <div class="navbar">
+          <ul>
+            <li class="nav-item">
+              <a href="index.html" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="about.html" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Products</a>
+            </li>
+            <li class="nav-item">
+              <a href="contact.html" class="nav-link">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a
+                href="addToCart.html"
+                class="nav-link add-to-cart-button"
+                id="cartValue"
+              >
+                <i class="fa-solid fa-cart-shopping"> 0 </i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <section class="section-extra-product" data-aos="zoom-in-up" data-aos-delay="0">
+      <div class="container grid grid-three--cols">
+        <div class="div-extra grid grid-two--cols">
+          <div class="extra-text">
+            <p>new year sale</p>
+            <h3>get and extra 50% off</h3>
+            <a href="#">Shop Now</a>
+          </div>
+          <div class="extra-img extra-laptop">
+            <img src="assets/laptop-BumqR86g.png" alt="laptop" />
+          </div>
+        </div>
+        <div class="div-extra grid grid-two--cols">
+          <div class="extra-text">
+            <p>new year sale</p>
+            <h3>get and extra 40% off</h3>
+            <a href="#">Shop Now</a>
+          </div>
+          <div class="extra-img extra-laptop">
+            <img src="assets/headphone-h5AtJvx2.png" alt="headphone" />
+          </div>
+        </div>
+        <div class="div-extra grid grid-two--cols">
+          <div class="extra-text">
+            <p>new year sale</p>
+            <h3>get and extra 20% off</h3>
+            <a href="#">Shop Now</a>
+          </div>
+          <div class="extra-img extra-laptop">
+            <img src="assets/smartwatch-CkrKPRAQ.png" alt="smartwatch" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section-policy" data-aos="zoom-in-up" data-aos-delay="0">
+      <div class="container grid grid-four--cols">
+        <div class="div-policy">
+          <div class="icons">
+            <i class="fa-solid fa-truck"></i>
+          </div>
+          <div class="policy-text">
+            <p>Worldwide Shopping</p>
+            <p>order above $100</p>
+          </div>
+        </div>
+        <div class="div-policy">
+          <div class="icons">
+            <i class="fa-solid fa-rotate"></i>
+          </div>
+          <div class="policy-text">
+            <p>Easy 30 Day Return</p>
+            <p>Back Returns in 7 Days</p>
+          </div>
+        </div>
+        <div class="div-policy">
+          <div class="icons">
+            <i class="fa-solid fa-hand-holding-dollar"></i>
+          </div>
+          <div class="policy-text">
+            <p>Money Back Guarntee</p>
+            <p>Guarntee with in 30 Days</p>
+          </div>
+        </div>
+        <div class="div-policy">
+          <div class="icons">
+            <i class="fa-solid fa-headphones"></i>
+          </div>
+          <div class="policy-text">
+            <p>Easy Online Support</p>
+            <p>24x7 Any Time Support</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--start our product section-->
+    <section class="section-products container">
+      <div class="">
+        <h2 class="section-common--heading">Cheackout TDM Store</h2>
+      </div>
+      <section class="container">
+        <div id="productContainer" data-aos="fade-right"></div>
+      </section>
+    </section>
+
+    <!--section product templates start-->
+    <template id="productTemplate">
+      <div class="cards" id="cardValue">
+        <article class="information [card]">
+          <span class="category"></span>
+          <div class="imageContainer">
+            <img src="" alt="" class="productImage" />
+          </div>
+          <h2 class="productName"></h2>
+          <div class="productRating">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+            ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+            ><i class="fa-solid fa-star"></i>
+          </div>
+          <p class="productDescription"></p>
+          <div class="productPriceElement">
+            <p class="productPrice"></p>
+            <p class="productActualPrice"></p>
+          </div>
+          <div class="productStockElement">
+            <p class="productProperty">Total Stock Available</p>
+            <p class="productStock"></p>
+          </div>
+          <div class="productQuantityElement">
+            <p class="productProperty">Quantity(pieces)</p>
+            <div class="stockElement">
+              <button class="cartIncrement">+</button>
+              <p class="productQuantity">1</p>
+              <button class="cartDecrement">-</button>
+            </div>
+          </div>
+          <button class="add-to-cart-button">
+            <i class="fa-solid fa-cart-shopping"></i>Add To Cart
+          </button>
+        </article>
+      </div>
+    </template>
+
+    <!--section product templates end-->
+    <!--end our product section-->
+    <!--footer section start-->
+    <footer class="section-footer">
+      <div class="footer-container container">
+        <div class="content_1">
+          <a href="index.html"><span class="logo_1">TDM</span> <span class="logo_2">Store</span></a>
+          <p>Welcome to TDM Store, your ultimate destination for cutting-edge gadgets!</p>
+        </div>
+        <div class="content_2">
+          <h4>SHOPPING</h4>
+          <a href="products.html">Computer Store</a>
+          <a href="products.html">Laptop Store</a>
+          <a href="products.html">Accessories</a>
+          <a href="products.html">Sales & Discount</a>
+        </div>
+        <div class="content_3">
+          <h4>Experience</h4>
+          <a href="./contact.html">Contact Us</a>
+          <a href="products.html" >Payment Method</a>
+          <a href="products.html" >Delievery</a>
+          <a href="products.html" >Return and Exchange</a>
+        </div>
+        <div class="content_4">
+          <h4>NEWSLETTER</h4>
+          <p>Be the first to know about new <br/>arrivals, sales & promos!</p>
+          <div class="f-mail">
+            <input type="email" placeholder="enter your email"/>
+            <i class="bx bx-envelope"></i>
+          </div>
+          <hr/>
+        </div>
+      </div>
+      <div class="f-design">
+        <div class="f-design-txt">
+          <p>© 2024 TDM Store, Inc. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+    <!--footer section end-->
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
